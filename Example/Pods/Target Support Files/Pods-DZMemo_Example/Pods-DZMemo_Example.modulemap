@@ -1,0 +1,6 @@
+framework module Pods_DZMemo_Example {
+  umbrella header "Pods-DZMemo_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

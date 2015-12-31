@@ -1,0 +1,17 @@
+PODS:
+  - DZMemo (0.1.0)
+  - Kiwi (2.4.0)
+
+DEPENDENCIES:
+  - DZMemo (from `../`)
+  - Kiwi
+
+EXTERNAL SOURCES:
+  DZMemo:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DZMemo: 2964b4738902aa1f6e753c3d4e1cdcae19a042ee
+  Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
+
+COCOAPODS: 0.39.0

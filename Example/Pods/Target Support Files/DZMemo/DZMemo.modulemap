@@ -1,0 +1,6 @@
+framework module DZMemo {
+  umbrella header "DZMemo-umbrella.h"
+
+  export *
+  module * { export * }
+}
