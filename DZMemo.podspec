@@ -18,6 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
                        backup a value for an instance, then recover it, using the memo design pattern
+                        DESC
 
   s.homepage         = "https://github.com/yishuiliunian/DZMemo"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
