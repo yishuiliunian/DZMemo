@@ -19,5 +19,6 @@
 @property (nonatomic, assign, readonly) BOOL dataVaild;
 @property (nonatomic, weak, readonly) id value;
 @property (nonatomic, strong, readonly) NSString* key;
+@property (nonatomic, assign) SEL recoverSEL;
 - (instancetype) initWithEnv:(id)env key:(NSString*)key;
 @end

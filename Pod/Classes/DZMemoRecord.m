@@ -30,6 +30,7 @@
 
 - (BOOL) backup
 {
+
     if (!_env || !_key || ![_env respondsToSelector:NSSelectorFromString(_key)]) {
         _dataVaild = NO;
         return NO;
@@ -57,7 +58,11 @@
     if (!self.dataVaild) {
         return NO;
     }
-    [_env setValue:_value forKey:_key];
+    if (self.recoverSEL) {
+        [_env performSelector:self.recoverSEL withObject:_value];
+    } else {
+        [_env setValue:_value forKey:_key];
+    }
     return YES;
 }
 @end

@@ -31,6 +31,12 @@
     [_monoArray addObject:r];
 }
 
+- (void) memoEnv:(id)env key:(NSString *)key recorverSEL:(SEL)sel
+{
+    DZMemoRecord* r = [[DZMemoRecord alloc] initWithEnv:env key:key];
+    r.recoverSEL = sel;
+    [_monoArray addObject:r];
+}
 - (void) recover
 {
     for (DZMemoRecord* r  in _monoArray) {
